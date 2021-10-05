@@ -1,0 +1,36 @@
+//----------------------------------------2.ders------------------------------------------------------------
+package com.company;
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+                int n1 = scanner.nextInt(); int n2 = scanner.nextInt(); int n3 = 5;
+                if( n1 >n2 && n1 > n3){
+                    System.out.println("En buyuk sayi " + n1 );
+                }
+                else if (n2 > n1 && n2 > n3){
+                    System.out.println("En buyuk sayi " + n2 );
+                }
+                else {
+                    System.out.println("En buyuk sayi " + n3 );
+                }
+        Scanner scanner = new Scanner(System.in);
+        Integer gun =scanner.nextInt();
+        System.out.println("Lutfen istediginiz günü girin: " + gun);
+        switch(gun){
+            case 1:
+            System.out.println("Pazartesi" );
+            break;
+
+            case 2:
+                System.out.println("Sali");
+            break;
+
+            case 3:
+                System.out.println("Carsamba");
+                break;
+        }
