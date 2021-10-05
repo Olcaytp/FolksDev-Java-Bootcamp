@@ -1,0 +1,105 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+//1-while döngüsü deyimi içerisindeki girilen num değeri 0'a eşit olana kadar sum değişkeninde toplama yapımı
+        /*public static void main(String[] args) {
+    	  write your code here
+        Scanner kb = new Sanner(System.in);
+        System.out.println("Start entering the numbers: ");
+
+        int sum = 0;
+        int num;
+
+        while((num = Integer.parseInt(kb.nextLine())) != 0)
+        {
+            sum += num;
+            System.out.printf("Sum: %d\n", sum);
+        }
+    }*/
+    
+    
+    //2-while döngüsü içerisinde pozitif ve negatif sayıların ayrı ayrı toplamının bulunması
+/*public static void main(String[] args) {
+
+    Scanner kb = new Scanner(System.in);
+    System.out.println("Start entering the numbers: ");
+
+    int positiveSum = 0;
+    int negativeSum = 0;
+    int num;
+
+    while((num = Integer.parseInt(kb.nextLine())) != 0){
+
+        if(num > 0)
+            positiveSum += num;
+        else
+            negativeSum += num;
+        displayResult(positiveSum, negativeSum);
+       }
+    }
+  public static void displayResult(int positiveSum, int negativeSum){
+    if(positiveSum > 0)
+        System.out.printf("Sum of positive numbers: %d%n", positiveSum);
+    else
+        System.out.println("You did not enter any positive numbers");
+    if(negativeSum < 0)
+        System.out.printf("Sum of negative numbers: %d%n", negativeSum);
+    else
+        System.out.println(" You did not enter any negative numbers");
+    }*/
+    
+    //3-Döngü içerisinde sayının kaç basamaklı olduğunun bulunması
+    /*  public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        System.out.println("Enter the numbers: ");
+
+        int num;
+
+        while ((num = Integer.parseInt(kb.nextLine())) != 0) {
+            int countofDigits = getDigitsCount(num);
+
+            System.out.printf("The number of digits %d is: %d%n", num, countofDigits);
+            System.out.printf("Enter a number");
+        }
+        System.out.println("The number of digits 0 is :1");
+    }
+    public static int getDigitsCount(int num){
+        if(num == 0)
+            return 1;
+        int count = 0;
+        while(num != 0){
+            ++count;
+            num /= 10;
+        }
+        return count;
+
+}/*
+//4-Basamak Sayılarının Toplamı
+ /*
+    public static void main(String[] args)
+    {
+        Scanner kb = new Scanner (System.in);
+        System.out.println("Enter a number:");
+
+        int num;
+        while((num = Integer.parseInt(kb.nextLine())) != 0)
+        {
+            int sumOFNumbersDigits = getDigitsSum(num);
+            System.out.printf("The sum of the digits of %d is: %d%n", num, sumOFNumbersDigits);
+            System.out.println("Enter a number:");
+        }
+        System.out.println("The sum of the digits of the number 0 is 0.");
+    }
+    public static int getDigitsSum(int num)
+    {
+        int sum = 0;
+        while(num != 0)
+        {
+            sum += num % 10;
+            num /= 10;
+        }
+        return sum;
+    }*/
+
